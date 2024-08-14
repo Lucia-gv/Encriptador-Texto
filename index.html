@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+</head>
+<body>
+    <header>
+        <img src="./assets/Logoalura.png" alt="Logo alura">
+    </header>
+
+    <main>
+        <form class="form__contenedor">
+            <textarea class="caja__mensaje" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí:"></textarea>
+              <div class="btn_contenedor">
+                <div class="alert__msj"><img src="./assets/exclamation.png" alt="exclamation"><span>Solo letras minúsculas y sin acentos</span></div>
+              </div>
+            <div class="submit__contenedor">
+             <!--Utilizamos input type="submit" para que el boton envie el texto ingresado por el usuario al servidor y lo procese-->
+              <input class="form__boton" type="submit" value="Encriptar">
+              <input class="form__boton form__boton--segundo" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img class="resultado__img" src="./assets/Muñeco.png" alt="Muñeco buscando texto">
+            <div class="resultado__container">
+                <h3 class="resultado__titlle">Ningún mensaje fue encontrado</h3>
+                <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="result__btn form__boton form__boton--segundo hidden" > Copiar </button>
+            </div>
+        </aside>
+    </main>
+    <script src="./encriptador.js"></script>
+    <footer class="footer">
+        <a class="presentacion__enlaces__links" href="https://github.com/Lucia-gv/Encriptador-texto">
+            <img src="./assets/github.png">
+           Github - Desarrollado por Lucia García V.</a>
+    </footer>
+</body>
+</html>
